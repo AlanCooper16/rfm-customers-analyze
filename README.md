@@ -10,8 +10,14 @@
 
 精准用户分群与营销方案：基于RFM模型对用户进行分群，识别高价值用户、潜力用户、流失风险用户与其他用户，并为每一类用户设计个性化的营销策略。
 
-**数据源**
+**数据来源**
 
-数据集：https://www.heywhale.com/mw/project/60fcd0bb0af0e200173ed9f5
+本项目数据来自于公开数据集，原始数据集来源于和鲸社区（https://www.heywhale.com/mw/project/60fcd0bb0af0e200173ed9f5） 。为了便于分析与可视化，我将数据集导入至阿里云 RDS 数据库（PostgreSQL），并使用 SQL 提取关键字段，包括但不限于：
 
-主要字段：包括订单ID、购买日期、商品名称、数量、价格、运费、用户信息等。
+data
+订单编号（order_id)，用户姓名（buyer-name)，产品名称（product-name），商品价格（item-price），购买日期（purchase-date"），购买数量(quantity-purchased)
+
+地区市场占有率
+州名简写，订单销售
+
+最终数据样本可见于本项目的 data.csv 与地区市场占有率.csv文件，用于复现与展示。
