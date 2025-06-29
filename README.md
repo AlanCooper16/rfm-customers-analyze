@@ -14,10 +14,12 @@
 
 本项目数据来自于公开数据集，原始数据集来源于和鲸社区（https://www.heywhale.com/mw/project/60fcd0bb0af0e200173ed9f5） 。为了便于分析与可视化，我将数据集导入至阿里云 RDS 数据库（PostgreSQL），并使用 SQL 提取关键字段，包括但不限于：
 
-data
+- data
+
 订单编号（order_id)，用户姓名（buyer-name)，产品名称（product-name），商品价格（item-price），购买日期（purchase-date"），购买数量(quantity-purchased)
 
-地区市场占有率
+- 地区市场占有率
+
 州名简写，订单销售
 
 最终数据样本可见于本项目的 data.csv 与地区市场占有率.csv文件，用于复现与展示。
